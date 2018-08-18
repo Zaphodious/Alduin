@@ -115,6 +115,10 @@ if !exists( "g:alduin_Shout_Become_Ethereal" )
     let g:alduin_Shout_Become_Ethereal = 0
 endif
 
+if !exists( "g:alduin_Shout_Unrelenting_Force" )
+    let g:alduin_Shout_Unrelenting_Force = 0
+endif
+
 " COMMON COLORS AND SETTINGS
 highlight PreProc          guifg=#dfaf87  guibg=NONE     gui=NONE       ctermfg=180   ctermbg=NONE  cterm=NONE
 highlight Function         guifg=#875f5f  guibg=NONE     gui=NONE       ctermfg=95    ctermbg=NONE  cterm=NONE
@@ -286,6 +290,9 @@ if g:alduin_Shout_Fire_Breath
     highlight Search          guifg=#dfdfaf  guibg=#5f0000  gui=NONE  ctermfg=187  ctermbg=52    cterm=NONE
 endif
 
+if g:alduin_Shout_Unrelenting_Force 
+	"Brilliant syntax highlighting
+	highlight Keyword     guifg=#fc8ffc  guibg=#6000af  gui=NONE  ctermfg=13   ctermbg=56    cterm=NONE  	
 " LICENSE:
 " Copyright (c) 2018 Alessandro Yorba
 "
